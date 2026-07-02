@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html into</title>
+    <!-- external method -->
+     <link rel="stylesheet" href="style.css">
+    <!-- internal method -->
+     <style>
+        /* tag selector */
+        h1{
+            color: green;
+        }
+        /* id selector  */
+        #head-1{
+            color: aqua;
+        }
+        #head-2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* class selector  */
+
+     </style>
 </head>
 <body>
-    <h3>hello world</h3>
+    <!-- inline methed  -->
+    <h3 style="color: blueviolet;">hello world</h3>
 
     <!-- This tag used to create heading or subtittle in a webpage -->
     <h1>heading 1</h1>
-    <h2>heading 2</h2>
-    <h3>heading 3</h3>
+    <h2 id="head-1">heading 2</h2>
+    <h3 id="head-2">heading 3</h3>
     <h4>heading 4</h4>
     <h5>heading 5</h5>
     <h6>heading 6</h6>
 
     <!-- This tag used to add peragraph in a webpage -->
-    <p>FIFA stands for Fédération Internationale de Football Association, which translates in English
+    <p id="pera-1">FIFA stands for Fédération Internationale de Football Association, which translates in English
          to the International Federation of Association Football.
          It is the worldwide governing body for association football, futsal, and beach soccer.</p>
 
@@ -65,7 +84,7 @@
           
         </ul>
 
-        <dl>
+        <dl class="brand">
             <dt>Xiaomi</dt>
             <dd>mi note 15 pro</dd>
             <dd>mi note 14 pro</dd>
@@ -82,6 +101,7 @@
             <dd>RTX 30</dd>
             <dd>RTX 20</dd>
             
+            <!-- description list -->
         </dl>
         <table border="1">
             <tr>
@@ -112,7 +132,34 @@
         </tr>
         </table>
 
+<!-- semantic tag -->
+ <section></section>
+<nav></nav>
+<aside></aside>
+<article></article>
+<span></span>
+<br>
+<hr>
+<form >
+    <label for="name" id="name">
+        Name :
+    </label >
+    <input type="text" placeholder="Enter your name">
+     <label for="passcode" id="passcode">
+        Password :
+    </label>
+    <input type="password" placeholder="Enter your password">
+     <label  for="mail" id="mail">
+        Email :
+    </label>
+    <input type="email" placeholder="Enter your email id"> <br> <br>
+    <label >male :</label>
+    <input type="radio" name="gender" value="male"><br>
+    <label >female :</label>
+      <input type="radio" name="gender" value="female"><br>
+    <button disabled>Register now</button>
 
-
+</form>
+<hr>
 </body>
 </html>
