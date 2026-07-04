@@ -9,3 +9,27 @@
 li{
     font-style: oblique;
 }
+.card{
+    border: 1px solid crimson ;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+h3{
+     font-family: "Rajdhani", sans-serif;
+}
+p{
+      font-family: "Nunito", sans-serif;
+      line-height: 30px;
+}
+.card-img{
+     width: 125px;
+    border-top-left-radius: 50%;
+}
+.card-img-1{
+      width: 100%;
+    border-radius: 100%;
+}
