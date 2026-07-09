@@ -63,6 +63,7 @@ p{
     right: 0px;
     z-index: 1;
 }
+/* flex box */
 .menu{
     display: flex;
     /* flex-direction: column; */
@@ -92,10 +93,12 @@ header{
     display: flex;
     justify-content: center;
     background-color: rgba(4, 66, 46, 0.541);
+    height: 50px;
+    align-items: center;
 nav{
     display: flex;
     a{
-        color: rgb(229, 222, 222);
+        color: rgb(0, 0, 0);
         text-decoration: none;
         padding: 10px 20px;
         display: block;
@@ -105,5 +108,80 @@ nav{
 }
 }
 a:hover{
-    color: black;
+    color: lch(16.59% 0 296.81 / 0.84);
+}
+/* grid-css */
+.c-ard{
+    padding: 2em;
+    background-color: aqua;
+    text-align: center;
+     border: solid rgb(0, 0, 0) 1px;
+     border-radius: 8px;
+}
+.condiner-card{
+    border: solid rgb(0, 0, 0) 1px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows:100px 100px 100px; 
+    /* grid-template-columns: repeat(3,5fr); */
+    gap: 5px;
+    justify-content:space-between;
+
+
+}  
+/* media queris */
+
+.media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.media-1,
+.media-2,
+.media-3,
+.media-4{
+    height: 100px;
+    width: 100px;
+}
+.media-1{
+    background-color: rgb(2, 40, 74);
+}
+.media-2{
+    background-color: black;
+}
+.media-3{
+    background-color: blueviolet;
+}
+.media-4{
+    background-color: chocolate;
+}
+  @media screen and (max-width:430px) {
+    .media{
+        background-color: rgba(8, 104, 72, 0.781);
+        flex-direction: column;
+
+    }
+.media-1{
+    background-color: #8651119c;
+}
+.media-2{
+    background-color: rgb(255, 0, 234);
+}
+.media-3{
+    background-color:chartreuse;
+}
+.media-4{
+    background-color: aqua;
+    
+}
+
+} 
+@media screen and (max-height:430px) {
+    .media-1,
+.media-2,
+.media-3,
+.media-4{
+    border-radius: 10px;
+}
+    
 }
