@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Centered Brand Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Small cosmetic tweak so the centered brand stays visually centered when links/icons are different widths */
+      .navbar .navbar-brand {
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <!-- Toggler for mobile: controls the collapse area that contains left links + right icons -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+          aria-controls="navContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content: using a single collapse so both sides collapse into the toggler on small screens -->
+        <div class="collapse navbar-collapse w-100" id="navContent">
+          <div class="d-flex w-100 align-items-center">
+            <!-- LEFT: menu links -->
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row gap-3 order-1"
+            >
+              <a class="nav-link" href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <!-- CENTER: Brand (perfectly centered using order and mx-auto) -->
+            <a class="navbar-brand mx-auto order-0" href="#">main.log</a>
+
+            <!-- RIGHT: utility icons -->
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row gap-3 order-2"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-label="Search"
+                  ><i class="bi bi-search"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-label="Like"
+                  ><i class="bi bi-heart"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-label="Cart"
+                  ><i class="bi bi-cart"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
